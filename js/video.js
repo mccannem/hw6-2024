@@ -16,11 +16,12 @@ window.addEventListener("load", function() {
 // #2: Play video
 document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
-	video.play();
 
 	// Show current volume
 	var vol = video.volume;
 	document.getElementById("volume").innerHTML = (vol * 100) + "%";
+
+	video.play();
 });
 
 // #3: Pause video
